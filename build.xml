@@ -34,4 +34,8 @@
            <fileset dir="${web}"/>
        </war>
     </target>
+    <target name="test" description=
+     "creates a web application archive file" 
+       depends="build">
+    </target>
  </project>
