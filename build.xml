@@ -1,0 +1,37 @@
+<project name="proanalysis" default="build" basedir=".">
+
+    <target name="init" 
+        description="Initializes some properties.">
+
+        <echo message="Initializing properties."/>
+
+        <property name="build" value=".\build" />
+        <property name="src" value=".\src" />
+        <property name="web" value=".\WebContent" />
+	<property name="lib" value="${web}\WEB-INF\lib" />
+        <property name="meta" value=".\META-INF" />
+        <property name="context-path" value="proanalysis" />
+
+    </target>
+
+    <target name="prepare" depends="init">
+
+        <echo message=
+          "Cleaning up the build and dist directories."/>
+
+        <delete dir="${build}"/>
+        <mkdir dir="${build}"/>
+
+    </target><target name="build" description=
+     "creates a web application archive file" 
+       depends="prepare">
+
+       <war destfile="${build}/${context-path}.war" 
+         webxml="${web}/WEB-INF/web.xml">
+
+           <classes dir="${build}"/>
+           <lib dir="${lib}"/>
+           <fileset dir="${web}"/>
+       </war>
+    </target>
+ </project>
