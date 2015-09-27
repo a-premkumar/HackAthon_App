@@ -22,7 +22,7 @@
         <mkdir dir="${build}"/>
     	<mkdir dir="${classes}"/>
     </target>
-	<target name="compile">
+	<target name="compile" depends="prepare">
 		<javac srcdir="${src}" destdir="${classes}">
 			<classpath refid="compile.classpath"/>
 		</javac>
