@@ -8,5 +8,4 @@ deploy:
    organization: VZWHackathon_ACSSSupportTeam
    space: development
    on:
-    tags: true
     all_branches: true
