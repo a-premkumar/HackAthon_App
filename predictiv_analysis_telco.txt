@@ -1,0 +1,52 @@
+What are the different things a telecom company consists of?
+Devices - Obviously
+Plans
+Features
+Offers
+Services
+Self Services
+Call centers
+
+What are all the analysis that a telecom company can do with the kind of data they have?
+
+1. Device
+-What are all hot and not devices
+-Device with more problem reported, kind or type of problem reported the most
+-Device sales analysis according to the geographical area
+
+2. Plans
+-Popular or widely used plan vs non popular plan
+-Plan choices made regarding the geography
+-Age of the customer vs the plan he likely choose
+-
+
+3. Features
+-Most used features that are provided free or for little amount
+-Vice versa
+-Features that are becoming popular and expected to top in near future
+-Vice versa
+
+4. Offers and Promotions
+-Offers that makes the customer happy instantly
+-Offers that customer show least intrest
+-While disconnect which are all the offers makes customer stay back
+
+5. Call centers
+-Density of call according to geo locations
+-The time of the day, week, month and year when the calls becomes more denser
+-Customers with most number of calls in the given time frame and their reasons
+-What kind of call takes more time and what takes least time
+-Average time of a call based on geo location
+-Percentage of customers happy/unhappy at the end of the call by geo location, call reason, time of the day etc
+
+6. Services
+-At what time does the service availability is reduced by day, week, month and year
+-Frequent or large outages on service reported by geo locations
+-Top reasons for service outage
+-Average turn around time for each service types
+
+7.Attrition Report
+-Percentage of new customers vs leaving customers in a given time frame
+-reason for leaving
+-willingness to stay if the concern is addressed
+-attrition percentage by geo location
