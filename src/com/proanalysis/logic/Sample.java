@@ -1,8 +1,6 @@
 package com.proanalysis.logic;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -35,12 +33,7 @@ public class Sample extends HttpServlet {
      */
     public Sample() {
         super();
-        // TODO Auto-generated constructor stub
     }
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//MongoClientURI uri = new MongoClientURI("mongodb://cloudfoundry-test_2p6otl8c_841b7q4b_tmtlqeaa:eb5d00ac-2a4f-4beb-80ad-9da11cff5a70@ds027908.mongolab.com:27908/cloudfoundry-test_2p6otl8c_841b7q4b");
 		//MongoClient mongoClient = new MongoClient(uri);
@@ -52,14 +45,7 @@ public class Sample extends HttpServlet {
 		FindIterable<Document> iterable = db.getCollection("restaurants").find(new Document("cuisine", "Indian"));
 		System.out.println(JSON.serialize(iterable));
 		response.getWriter().write(JSON.serialize(iterable));*/
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		response.getWriter().write("Servlet is Working!");
 	}
 
 }

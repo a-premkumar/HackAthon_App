@@ -19,11 +19,12 @@
     <target name="prepare" depends="init">
         <echo message="Cleaning up the build directory."/>
         <delete dir="${build}"/>
+    	<delete dir="${classes}"/>
         <mkdir dir="${build}"/>
     	<mkdir dir="${classes}"/>
     </target>
 	<target name="compile" depends="prepare">
-		<javac srcdir="${src}" destdir="${classes}">
+		<javac srcdir="${src}" destdir="${classes}" includeantruntime="false">
 			<classpath refid="compile.classpath"/>
 		</javac>
 	</target>
