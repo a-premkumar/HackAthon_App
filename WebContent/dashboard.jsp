@@ -4,42 +4,37 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<title>Pro Analysis - Next Generation Telecommunication Analysis Dashboard</title>
-		<style>
-			.layer-top{
-				height:150px;
-				width:100%;
-				background: skyblue;
+		<link rel="stylesheet" type="text/css" href="resources/css/dashboard.css"/>
+		<script type="text/javascript">
+			function tabChange(button){
+			    document.getElementById('content-frame').src = 'DashboardController?tab='+button.id;
 			}
-			.layer-bottom{
-				height:500px;
-				width:100%;
-				background: lightgreen;
-				display:inline-block;
-			}
-			.panel-nav{
-				height:100%;
-				width:20%;
-				float:left;
-				background:#e4e4e4;
-			}
-			.panel-content{
-				height:100%;
-				width:80%;
-				float:left;
-				background:#f4f4f4;
-			}
-			.content-frame{
-				width:100%;
-				height:100%;
-			}
-		</style>
+		</script>
 	</head>
 	<body>
-		<div class="layer-top"><center><strong>Top Layer</strong></center></div>
+		<div class="layer-top">
+			<div class="static-metric-small">
+				<div class="customer-caption">Total Customers</div>
+				<div class="customer-value">150Mn</div>
+			</div>
+			<div class="static-metric-small">
+				<div class="customer-caption">Calls handled /Day</div>
+				<div class="customer-value">18.9Mn</div>
+			</div>
+			<div class="static-metric-large"></div>
+		</div>
 		<div class="layer-bottom">
-			<div class="panel-nav">Navigation Panel</div>
+			<div class="panel-nav">
+				<input id="device" class="navigation-button" type="button" value="Device" onclick="tabChange(this)"/>
+				<input id="plans" class="navigation-button" type="button" value="Plans" onclick="tabChange(this)"/>
+				<input id="features" class="navigation-button" type="button" value="Features" onclick="tabChange(this)"/>
+				<input id="services" class="navigation-button" type="button" value="Services" onclick="tabChange(this)"/>
+				<input id="callCenter" class="navigation-button" type="button" value="Call Center" onclick="tabChange(this)"/>
+				<input id="offersPromotions" class="navigation-button" type="button" value="Offers/Promotions" onclick="tabChange(this)"/>
+				<input id="device" class="navigation-button" type="button" value="Attrition" onclick="tabChange(this)"/>
+			</div>
 			<div class="panel-content">
-				<iframe class="content-frame" src="Sample"></iframe>
+				<iframe class="content-frame" id="content-frame" src="DashboardController?tab=device" frameborder="0"></iframe>
 			</div>
 		</div>
 	</body>
