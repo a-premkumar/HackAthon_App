@@ -28,13 +28,19 @@
 				float:left;
 				background:#f4f4f4;
 			}
+			.content-frame{
+				width:100%;
+				height:100%;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="layer-top"><center><strong>Top Layer</strong></center></div>
 		<div class="layer-bottom">
 			<div class="panel-nav">Navigation Panel</div>
-			<div class="panel-content">Content Panel</div>
+			<div class="panel-content">
+				<iframe class="content-frame" src="Sample"></iframe>
+			</div>
 		</div>
 	</body>
 </html>
