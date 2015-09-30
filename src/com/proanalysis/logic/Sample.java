@@ -2,6 +2,7 @@ package com.proanalysis.logic;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -31,6 +32,10 @@ public class Sample extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
+	String userName;
+	String password;
+//	String category;
+	RequestDispatcher requestDispatcher;
     public Sample() {
         super();
     }
@@ -45,7 +50,16 @@ public class Sample extends HttpServlet {
 		FindIterable<Document> iterable = db.getCollection("restaurants").find(new Document("cuisine", "Indian"));
 		System.out.println(JSON.serialize(iterable));
 		response.getWriter().write(JSON.serialize(iterable));*/
-		response.getWriter().write("Servlet is Working!");
+//		response.getWriter().write("Servlet is Working!");
+		userName = request.getParameter("userName");
+		password = request.getParameter("password");
+//		category = request.getParameter("category");
+//		if(category == null  && userName != null && password != null && !userName.equals("") && !password.equals("")){
+		if(userName != null && password != null && !userName.equals("") && !password.equals("")){
+			request.setAttribute("respVal", "welcome");
+			requestDispatcher = request.getRequestDispatcher("dashboard.jsp");
+			requestDispatcher.forward(request, response);
+		}
 	}
 
 }

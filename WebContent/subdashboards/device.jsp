@@ -38,7 +38,8 @@
 			}); 
 		</script>
 	</head>
-	<body style="overflow-y:scroll">
+	<body >
+	<div class="groupHeader"> <h1>Devices</h1> </div>
 		<div class="reports-filter">
 			<label>Location:</label>
 			<select>
