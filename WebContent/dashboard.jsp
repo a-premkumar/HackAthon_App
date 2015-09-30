@@ -61,6 +61,7 @@ box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.91); */
    padding:5px;	
    width:100%; 	 
    font-family: monospace;
+   height:20%;
 }
 
 .myButton {
@@ -87,7 +88,7 @@ box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.91); */
 	font-family: monospace;
     font-variant: small-caps;
 	
-	height:12%;
+	height:12.45%;
 	width:74%;
 	text-align:center; 
 }
@@ -220,7 +221,10 @@ box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.91); */
 <body>
 
 <div id="header">
-<h1>ACSS Analytics</h1>
+<img style="margin: -5px; width: 100px; height: 84px; float: left;"src="resources/logo.png" style="width:100px;height:100px;">
+<h1 style="margin-left:120px">ACSS Analytics</h1>
+
+
 </div>
 
 <div id="navigator">

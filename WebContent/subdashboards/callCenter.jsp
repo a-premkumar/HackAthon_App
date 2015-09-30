@@ -72,6 +72,7 @@
 		</script>
 	</head>
 	<body style="overflow-y:scroll">
+	<div class="groupHeader"> <h1>Call Center</h1> </div>
 		<div class="call-density-container" id="call-density-container"></div>
 		<div class="call-reports-bottom">
 			<div class="call-type-container" id="call-type-container"></div>

@@ -29,10 +29,10 @@ margin: 50px auto;
 width: 300px;
 }
 #title{
- margin: 200px 48px 45px 500px;
- width: 300px;
+ width: 100%;
  font-size: xx-large;
- color: green;
+ color: #DF0101;
+ text-align: center; font-family: monospace; font-weight: bold; margin-top: 200px;
 }
 form fieldset input[type="text"], input[type="password"] {
 background-color: #e5e5e5;
@@ -86,7 +86,7 @@ width: 50px;
 </style>
 </head>
 <body>
-<div id="title">Pro Analysis - ACSS</div>
+<div id="title">ACSS Analytics</div>
 <div id="login">
 <form action="Sample" method="get">
 <fieldset>
