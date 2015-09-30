@@ -59,7 +59,7 @@ color: #f4f4f4;
 cursor: pointer;
 font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 height: 50px;
-text-transform: uppercase;
+ text-transform: uppercase;
 width: 300px;
 -webkit-appearance:none;
 }
