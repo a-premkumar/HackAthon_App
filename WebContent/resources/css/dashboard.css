@@ -94,3 +94,18 @@ div{
 	height:100%;
 	float:left;
 }
+/* Call Center Styles */
+.call-average-time, .call-type-container{
+	width:50%;
+	height:100%;
+	float:left;
+}
+.call-reports-bottom{
+	width:100%;
+	height:50%;
+	display:inline-block;
+}
+.call-density-container{
+	width:100%;
+	height:50%;
+}
