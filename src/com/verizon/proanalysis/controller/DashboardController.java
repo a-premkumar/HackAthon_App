@@ -31,12 +31,11 @@ public class DashboardController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String tab = request.getParameter("tab");
 		String location = request.getParameter("location");
-		String age = request.getParameter("age");
 		String time = request.getParameter("time");
 		if(tab.equals("callCenter")){
 			request.setAttribute("data", CallCenter.callCenterDataAccess(tab, location, time));
 		} else {
-			request.setAttribute("data", Users.userDataAccess(tab, location, Integer.parseInt(age)));
+			request.setAttribute("data", Users.userDataAccess(tab, location));
 		}
 		request.getRequestDispatcher("subdashboards/"+tab+".jsp").forward(request, response);
 	}

@@ -19,14 +19,14 @@ public class TestUsers {
 		String type="";String location="";
 		int age=0;
 		
-		assertNotEquals(null, Users.userDataAccess(type, location, age)); 
+		assertNotEquals(null, Users.userDataAccess(type, location)); 
 	}
 	@Test
 	public void test1UserDataAccess() {
 		String type="";String location="";
 		int age=0;
 		
-		assertEquals("", Users.userDataAccess(type, location, age)); 
+		assertEquals("", Users.userDataAccess(type, location)); 
 	}
 	@Test
 	public void testgetLeastPlansReport()
@@ -37,7 +37,7 @@ public class TestUsers {
 		String location="";
 		int age=0;
 		
-		assertEquals(JSON.serialize(iterable), Users.userDataAccess( type,location, age)); 
+		assertEquals(JSON.serialize(iterable), Users.userDataAccess( type,location)); 
 	}
 	@Test
 	public void testgetTopPlansReport()
@@ -48,7 +48,7 @@ public class TestUsers {
 		String location="";
 		int age=0;
 		
-		assertEquals(JSON.serialize(iterable), Users.userDataAccess( type,location, age)); 
+		assertEquals(JSON.serialize(iterable), Users.userDataAccess( type,location)); 
 	}
 	@Test
 	public void testgetTopProblematicDeviveReport()
@@ -59,7 +59,7 @@ public class TestUsers {
 		String location="";
 		int age=0;
 		
-		assertEquals(JSON.serialize(iterable), Users.userDataAccess( type,location, age)); 
+		assertEquals(JSON.serialize(iterable), Users.userDataAccess( type,location)); 
 	}
 	@Test
 	public void testgetTopProvidersReport()
@@ -70,7 +70,7 @@ public class TestUsers {
 		String location="";
 		int age=0;
 		
-		assertEquals(JSON.serialize(iterable), Users.userDataAccess( type,location, age)); 
+		assertEquals(JSON.serialize(iterable), Users.userDataAccess( type,location)); 
 	}
 	@Test
 	public void testgetTopDeviceReport()
@@ -81,7 +81,7 @@ public class TestUsers {
 		String location="";
 		int age=0;
 		
-		assertEquals(JSON.serialize(iterable), Users.userDataAccess( type,location, age)); 
+		assertEquals(JSON.serialize(iterable), Users.userDataAccess( type,location)); 
 	}
 	
 	
