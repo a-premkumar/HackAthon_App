@@ -27,27 +27,27 @@ public class Users {
 	}
 
 	private static String getLeastPlansReport(String location, int age) {
-		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USER).find();
+		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USERS).find();
 		return JSON.serialize(iterable);
 	}
 
 	private static String getTopPlansReport(String location, int age) {
-		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USER).find();
+		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USERS).find();
 		return JSON.serialize(iterable);
 	}
 
 	private static String getTopProblematicDeviveReport() {
-		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USER).find();
+		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USERS).find();
 		return JSON.serialize(iterable);
 	}
 
 	private static String getTopProvidersReport(String location) {
-		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USER).find();
+		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USERS).find();
 		return JSON.serialize(iterable);
 	}
 
 	private static String getTopDeviceReport(String location) {
-		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USER).find();
+		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USERS).find();
 		return JSON.serialize(iterable);
 	}
 }
