@@ -1,0 +1,227 @@
+
+
+db.callcenter.insert(
+{
+    mdn: "6456435435",
+    location: "NewYork",
+    callinittime: new Date("2014-11-15T17:30:00"),
+    callendtime: new Date("2014-11-15T17:40:00"),
+    reasonforcall: "CheaperPlan",
+    issueresolved:"No"
+}
+)
+
+
+db.callcenter.insert(
+{
+    mdn: "745754754",
+    location: "Mexico",
+    callinittime: new Date("2015-11-15T17:30:00"),
+    callendtime: new Date("2015-11-15T17:50:00"),
+    reasonforcall: "NetworkIssue",
+    issueresolved:"No"
+}
+)
+
+db.callcenter.insert(
+{
+    mdn: "6456435435",
+    location: "NewYork",
+    callinittime: new Date("2014-12-16T17:40:00"),
+    callendtime: new Date("2014-12-16T17:50:00"),
+    reasonforcall: "CheaperPlan",
+    issueresolved:"Yes"
+}
+)
+db.callcenter.insert(
+{
+    mdn: "6456543735",
+    location: "NewYork",
+    callinittime: new Date("2013-12-17T17:10:00"),
+    callendtime: new Date("2013-12-17T17:20:03"),
+    reasonforcall: "AddressChange",
+    issueresolved:"Yes"
+}
+)
+
+db.callcenter.insert(
+{
+    mdn: "6456409435",
+    location: "NewYork",
+    callinittime: new Date("2014-09-16T17:20:05"),
+    callendtime: new Date("2014-09-16T17:30:00"),
+    reasonforcall: "AddressChange",
+    issueresolved:"Yes"
+}
+)
+
+db.callcenter.insert(
+{
+    mdn: "5456409435",
+    location: "Texas",
+    callinittime: new Date("2015-08-16T17:50:05"),
+    callendtime: new Date("2015-08-16T17:50:20"),
+    reasonforcall: "PlanChange",
+    issueresolved:"Yes"
+}
+)
+
+db.callcenter.insert(
+{
+    mdn: "9856409435",
+    location: "Texas",
+    callinittime: new Date("2015-09-26T17:20:05"),
+    callendtime: new Date("2015-09-26T17:30:00"),
+    reasonforcall: "PlanChange",
+    issueresolved:"Yes"
+}
+)
+
+
+db.callcenter.insert(
+{
+    mdn: "9856409435",
+    location: "Kansas",
+    callinittime: new Date("2015-09-27T17:20:05"),
+    callendtime: new Date("2015-09-27T17:30:00"),
+    reasonforcall: "DeviceChange",
+    issueresolved:"Yes"
+}
+)
+
+
+db.callcenter.insert(
+{
+    mdn: "9856409435",
+    location: "Kansas",
+    callinittime: new Date("2015-09-26T17:20:05"),
+    callendtime: new Date("2015-09-26T17:30:00"),
+    reasonforcall: "SimPortability",
+    issueresolved:"Yes"
+}
+)
+db.callcenter.insert(
+{
+    mdn: "9856409435",
+    location: "NewYork",
+    callinittime: new Date("2015-10-29T20:20:05"),
+    callendtime: new Date("2015-10-26T20:45:00"),
+    reasonforcall: "SimPortability",
+    issueresolved:"Yes"
+}
+)
+
+
+db.callcenter.insert(
+{
+    mdn: "9876409435",
+    location: "Kansas",
+    callinittime: new Date("2015-11-29T20:20:05"),
+    callendtime: new Date("2015-11-26T20:45:00"),
+    reasonforcall: "DeviceChange",
+    issueresolved:"No"
+}
+)
+
+db.callcenter.insert(
+{
+    mdn: "9656409435",
+    location: "Kansas",
+    callinittime: new Date("2014-10-29T20:20:05"),
+    callendtime: new Date("2014-10-26T20:45:00"),
+    reasonforcall: "SimPortability",
+    issueresolved:"Yes"
+}
+)
+db.callcenter.insert(
+{
+    mdn: "6756409435",
+    location: "Texas",
+    callinittime: new Date("2015-10-29T20:20:05"),
+    callendtime: new Date("2015-10-26T20:45:00"),
+    reasonforcall: "ExtraBill",
+    issueresolved:"Yes"
+}
+)
+db.callcenter.insert(
+{
+    mdn: "8756409435",
+    location: "Albama",
+    callinittime: new Date("2015-10-29T20:20:05"),
+    callendtime: new Date("2015-10-29T20:45:00"),
+    reasonforcall: "SimPortability",
+    issueresolved:"No"
+}
+)
+db.callcenter.insert(
+{
+    mdn: "6756409435",
+    location: "Albama",
+    callinittime: new Date("2015-10-30T10:20:05"),
+    callendtime: new Date("2015-10-30T10:45:00"),
+    reasonforcall: "SimPortability",
+    issueresolved:"No"
+}
+)
+db.callcenter.insert(
+{
+    mdn: "9756409435",
+    location: "Texas",
+    callinittime: new Date("2014-11-26T11:20:05"),
+    callendtime: new Date("2014-11-26T11:25:00"),
+    reasonforcall: "DeviceChange",
+    issueresolved:"Yes"
+}
+)
+db.callcenter.insert(
+{
+    mdn: "6656409435",
+    location: "Texas",
+    callinittime: new Date("2015-12-30T20:20:05"),
+    callendtime: new Date("2015-12-30T20:25:00"),
+    reasonforcall: "DeviceChange",
+    issueresolved:"Yes"
+}
+)
+db.callcenter.insert(
+{
+    mdn: "643609435",
+    location: "Texas",
+    callinittime: new Date("2015-04-04T10:20:05"),
+    callendtime: new Date("2015-04-04T10:45:00"),
+    reasonforcall: "ExtraBill",
+    issueresolved:"No"
+}
+)
+
+
+db.user.find({},{plan:1})
+
+
+db.user.find({ _id:0})
+
+db.user.find(
+   { },
+   { plan: 1, _id: 0 }
+)
+
+db.user.find( { plan:"3G" })
+
+db.user.find(
+   { },
+    plan:"3G", _id: 0 }
+)
+
+db.user.find( { NoofDeviceProb: { $gt: 0 } })
+db.user.find( { NoofDeviceProb: { $gt: 0 }},{ device :1 } )
+
+
+
+db.user.find({},{plan:1})
+
+
+db.user.aggregate(
+    {$group : {_id : "$plan", "count" : {$sum : 1}}},
+    {$sort : {"count" : -1}}
+    
+)
