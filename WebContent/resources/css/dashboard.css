@@ -44,10 +44,10 @@ div {
 	width:10%;
 	float:left;
 }
-.logout-icon{
-	height:100%;
-	width:100%;
-	background: url('../images/logout.png') no-repeat;
+.logout-button{
+	margin:15%;
+	height:75%;
+	width:75%;
 }
 .layer-bottom {
 	height: 85%;
@@ -107,7 +107,6 @@ div {
 	font-weight:bold;
 	font-size:16px;
 	color:#f7f7f7;
-    background: url('../images/button-transparent.png') no-repeat top left;
 	margin: 0.025em;
 }
 

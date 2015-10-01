@@ -24,7 +24,7 @@
 				<h3 class="title-text">ACSS Analytics</h3>
 			</div>
 			<div class="layer-top-right">
-				<input type="button" value="Logout" onclick="onLogout()">
+				<input type="button" value="Logout" class="logout-button" onclick="onLogout()">
 			</div>
 		</div>
 		<div class="layer-bottom">
