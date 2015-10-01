@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.verizon.proanalysis.dao.CallCenter;
+import com.verizon.proanalysis.dao.Users;
+
 /**
  * Servlet implementation class DashboardController
  */
@@ -27,6 +30,14 @@ public class DashboardController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String tab = request.getParameter("tab");
+		String location = request.getParameter("location");
+		String age = request.getParameter("age");
+		String time = request.getParameter("time");
+		if(tab.equals("callCenter")){
+			request.setAttribute("data", CallCenter.callCenterDataAccess(tab, location, time));
+		} else {
+			request.setAttribute("data", Users.userDataAccess(tab, location, age));
+		}
 		request.getRequestDispatcher("subdashboards/"+tab+".jsp").forward(request, response);
 	}
 
