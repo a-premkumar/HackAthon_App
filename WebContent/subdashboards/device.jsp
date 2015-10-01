@@ -38,18 +38,15 @@
 			}); 
 		</script>
 	</head>
-	<body>
-	<!-- <div class="groupHeader"> <h1>Devices</h1> </div> -->
+	<body class="subdash-body">
 		<div class="reports-filter">
-			<label>Location:</label>
+			<label>Zone :</label>
 			<select>
 				<option value="All">All</option>
-				<option value="New Jersy">New Jersy</option>
-				<option value="Philledelhia">Philledelhia</option>
-				<option value="Kansas">Kansas</option>
-				<option value="Texas">Texas</option>
-				<option value="Florida">Florida</option>
-				<option value="Virginia">Virginia</option>
+				<option value="N">North/option>
+				<option value="E">East</option>
+				<option value="W">West</option>
+				<option value="S">South</option>
 			</select>
 		</div>
 		<div class="device-top-container">

@@ -29,8 +29,7 @@
 			});
 		</script>
 	</head>
-	<body style="overflow-y:auto;display:inline-block;">
-		<!-- <div class="groupHeader"> <h1>Plans</h1> </div> -->
+	<body class="subdash-body">
 		<div class="reports-filter">
 			<label>Age Group:</label>
 			<select>
