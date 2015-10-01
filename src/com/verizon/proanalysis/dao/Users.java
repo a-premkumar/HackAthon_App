@@ -14,7 +14,7 @@ import com.verizon.proanalysis.utils.Constants;
 public class Users {
 	private static MongoDatabase md;
 	
-	public static String userDataAccess(String type, String location, String age){
+	public static String userDataAccess(String type, String location, int age){
 		md = Database.getInstance(Constants.DATABASE_PRODATA);
 		Map<String,String> response = new HashMap<String,String>();
 		if(type.equals(Constants.TYPE_DEVICE)){

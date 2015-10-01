@@ -36,7 +36,7 @@ public class DashboardController extends HttpServlet {
 		if(tab.equals("callCenter")){
 			request.setAttribute("data", CallCenter.callCenterDataAccess(tab, location, time));
 		} else {
-			request.setAttribute("data", Users.userDataAccess(tab, location, age));
+			request.setAttribute("data", Users.userDataAccess(tab, location, Integer.parseInt(age)));
 		}
 		request.getRequestDispatcher("subdashboards/"+tab+".jsp").forward(request, response);
 	}

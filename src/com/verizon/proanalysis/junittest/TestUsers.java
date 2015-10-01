@@ -77,7 +77,7 @@ public class TestUsers {
 	{
 		MongoDatabase md=Database.getInstance(Constants.DATABASE_PRODATA);
 		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USERS).find();
-		String type=Constants.TOP_DEVICES;
+		String type=Constants.TYPE_DEVICES;
 		String location="";
 		int age=0;
 		
