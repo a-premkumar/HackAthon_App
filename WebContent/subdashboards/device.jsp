@@ -38,8 +38,8 @@
 			}); 
 		</script>
 	</head>
-	<body >
-	<div class="groupHeader"> <h1>Devices</h1> </div>
+	<body>
+	<!-- <div class="groupHeader"> <h1>Devices</h1> </div> -->
 		<div class="reports-filter">
 			<label>Location:</label>
 			<select>

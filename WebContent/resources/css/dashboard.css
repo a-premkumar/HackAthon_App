@@ -93,7 +93,7 @@ div{
 	float: left;
 }
 /* Plans Page Styles */
-.plans-top-used, .plans-least-used{
+.plans-top-used, .plans-least-used, .feautres-top-used, .feautres-least-used, .feautres-popular, .feautres-not-popular{
 	width:50%;
 	height:100%;
 	float:left;
