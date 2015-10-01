@@ -61,5 +61,4 @@ public class Sample extends HttpServlet {
 			requestDispatcher.forward(request, response);
 		}
 	}
-
 }

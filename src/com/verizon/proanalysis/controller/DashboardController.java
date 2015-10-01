@@ -1,4 +1,4 @@
-package com.verizon.proanalysis.controller;
+\package com.verizon.proanalysis.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -32,11 +32,11 @@ public class DashboardController extends HttpServlet {
 		String tab = request.getParameter("tab");
 		String location = request.getParameter("location");
 		String time = request.getParameter("time");
-		if(tab.equals("callCenter")){
+		/*if(tab.equals("callCenter")){
 			request.setAttribute("data", CallCenter.callCenterDataAccess(tab, location, time));
 		} else {
 			request.setAttribute("data", Users.userDataAccess(tab, location));
-		}
+		}*/
 		request.getRequestDispatcher("subdashboards/"+tab+".jsp").forward(request, response);
 	}
 
