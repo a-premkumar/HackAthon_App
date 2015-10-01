@@ -1,6 +1,10 @@
 package com.verizon.proanalysis.dao;
 
+import org.bson.Document;
+
+import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.util.JSON;
 import com.verizon.proanalysis.utils.Database;
 import com.verizon.proanalysis.utils.Constants;
 
@@ -8,7 +12,7 @@ public class Users {
 	private static MongoDatabase md;
 	
 	public static String userDataAccess(String type, String location, int age){
-		md = Database.getInstance(Constants.DATABASE_USERS);
+		md = Database.getInstance(Constants.DATABASE_PRODATA);
 		if(type.equals(Constants.TOP_DEVICES))
 			return getTopDeviceReport(location);
 		else if(type.equals(Constants.TOP_PROVIDERS))
@@ -23,27 +27,27 @@ public class Users {
 	}
 
 	private static String getLeastPlansReport(String location, int age) {
-		// TODO Auto-generated method stub
-		return null;
+		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USER).find();
+		return JSON.serialize(iterable);
 	}
 
 	private static String getTopPlansReport(String location, int age) {
-		// TODO Auto-generated method stub
-		return null;
+		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USER).find();
+		return JSON.serialize(iterable);
 	}
 
 	private static String getTopProblematicDeviveReport() {
-		// TODO Auto-generated method stub
-		return null;
+		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USER).find();
+		return JSON.serialize(iterable);
 	}
 
 	private static String getTopProvidersReport(String location) {
-		// TODO Auto-generated method stub
-		return null;
+		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USER).find();
+		return JSON.serialize(iterable);
 	}
 
 	private static String getTopDeviceReport(String location) {
-		// TODO Auto-generated method stub
-		return null;
+		FindIterable<Document> iterable = md.getCollection(Constants.TABLE_USER).find();
+		return JSON.serialize(iterable);
 	}
 }
