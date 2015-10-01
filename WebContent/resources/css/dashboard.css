@@ -115,17 +115,17 @@ div{
 }
 
 /* Call Center Styles */
-.call-average-time, .call-type-container{
+.call-type-container, .call-density-container{
 	width:50%;
 	height:100%;
 	float:left;
 }
-.call-reports-bottom{
+.call-reports-top{
 	width:100%;
 	height:50%;
 	display:inline-block;
 }
-.call-density-container{
+.call-average-time{
 	width:100%;
 	height:50%;
 }
