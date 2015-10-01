@@ -8,7 +8,7 @@ public class CallCenter {
 	private static MongoDatabase md;
 	
 	public static String callCenterDataAccess(String call, String location, String time){
-		md = Database.getInstance(Constants.DATABASE_CALL_CENTER);
+		md = Database.getInstance(Constants.TABLE_CALL_CENTER);
 		if(call.equals(Constants.TOP_DEVICES))
 			return getAverageCallDensity(location, time);
 		else if(call.equals(Constants.TOP_PROVIDERS))
