@@ -17,8 +17,8 @@
 			    $('#call-average-time').highcharts(eval(data.callAverageTime));
 			});
 			FusionCharts.ready(function(){
-				var callTypeData = data.callType;
-				var callDensityData = data.callDensity;
+				var callTypeData = callTypeData;
+				var callDensityData = callDensityData;
 			    var revenueChart = new FusionCharts({
 			        type: 'doughnut2d',
 			        renderAt: 'call-type-container',
